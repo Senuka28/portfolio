@@ -9,20 +9,39 @@ function App() {
   return (
   <div>
     <header className="navbar">
-      <nav>
-        <a href="#home">Home</a>{" | "}
-        <a href="#experience">Experience</a>{" | "}
-        <a href="#projects">Projects</a>{" | "}
-        <a href="#skills">Skills</a>{" | "}
-        <a href="#contact">Contact</a>{" | "}
-      </nav>
+      <div className="nav-inner">
+        <div className="nav-brand gradient-text">
+          Senuka Abeysinghe
+        </div>
+        <nav className="nav-links">
+          <a href="#home"><p>Home</p></a>
+          <span>|</span>
+          <a href="#experience"><p>Experience</p></a>
+          <span>|</span>
+          <a href="#projects"><p>Projects</p></a>
+          <span>|</span>
+          <a href="#skills"><p>Skills</p></a>
+          <span>|</span>
+          <a href="#contact"><p>Contact</p></a>
+        </nav>
+      </div>
     </header>
 
     <main>
         <div className='container'>
-          <section id="home">
-            <h1>Hi, I'm Senuka</h1>
-            <p>This is the home section.</p>
+          <section id="home" className='hero'>
+            <div className="hero-content">
+              <img
+                src="/me.jpg"
+                alt="Senuka Abeysinghe"
+                className="hero-image"
+              />
+
+              <div className="hero-text">
+                <h1 className="gradient-text">Hi! I'm Senuka</h1>
+                <p>Hello! I am an undergraduate student at Johns Hopkins University studying Computer Science and Applied Mathematics & Statistics. I am experienced and interested in applying software and AI/ML to bring automation solutions to industry. </p>
+              </div>
+            </div>
           </section>
 
           <section id="experience">

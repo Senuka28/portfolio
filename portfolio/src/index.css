@@ -24,15 +24,18 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
+  /*display: flex;*/
   min-width: 320px;
   min-height: 100vh;
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 8.0em;
   line-height: 1.1;
+}
+
+p {
+  color: #ffffff;
 }
 
 button {
@@ -71,22 +74,64 @@ button:focus-visible {
 .navbar {
   position: fixed;
   top: 0;
-  width: 100%;
+  left: 0;
+  right: 0;
   background: rgba(30, 30, 30, 0.9);
   backdrop-filter: blur(8px);
   padding: 14px 0;
-  text-align: center;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 1000;
 }
 
-.navbar nav a {
+.nav-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.nav-brand {
+  position: relative;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #c7d2fe;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.nav-brand::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #7aa2ff, #a78bfa);
+  border-radius: 2px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.nav-links a {
   color: #819ed0;
   text-decoration: none;
-  margin: 0 12px;
   font-weight: 500;
 }
 
-.navbar nav a:hover {
+.nav-links span {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.nav-links a:hover {
   color: white;
 }
 
@@ -100,8 +145,84 @@ section {
   scroll-margin-top: 80px;
 }
 
+section {
+  margin-bottom: 120px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+    radial-gradient(1200px 600px at 50% -200px, rgba(99, 102, 241, 0.15), transparent 100%),
+    #1c1c1c;
+  color:#e5e7eb
+}
+
+.gradient-text {
+  background: linear-gradient(
+    90deg,
+    #7aa2ff,
+    #a78bfa,
+    #f472b6
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+* {
+  transition: color 0.2s ease, background-color 0.2s ease, opacity 0.2s ease;
+}
+
+.hero {
+  min-height: 72vh; /* Increase from 65vh */
+  display: flex;
+  align-items: center;
+  padding-top: 40px; /* Add some top padding */
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  gap: 80px; /* Increase from 60px */
+  justify-content: center;
+  width: 100%;
+}
+
+.hero-image {
+  width: 350px; /* Increase from 300px */
+  height: 350px; /* Increase from 300px */
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid rgba(68, 115, 245, 0.868);
+  margin-right: 60px;
+  transform: scale(1.25);
+
+  box-shadow: 
+    0 0 30px rgba(122, 162, 255, 0.3),
+    0 0 60px rgba(167, 139, 250, 0.2);
+}
+
+.hero-text {
+  max-width: 600px; /* Increase from 520px */
+  flex: 1; /* Allow it to grow */
+}
+
+.hero-text h1 {
+  text-align: center;
+  font-size: 3.5rem; /* Increase from 3rem */
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  text-align: center;
+  line-height: 1.8; /* Increase from 1.7 */
+  font-size: 1.15rem; /* Make text slightly larger */
+}
+
 .container {
-  max-width: 900px;
+  max-width: 1200px; /* Increase from 900px */
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 40px; /* Increase from 20px */
 }
