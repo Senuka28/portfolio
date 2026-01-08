@@ -271,7 +271,6 @@ function App() {
                       <span className="skill-tag">Java</span>
                       <span className="skill-tag">HTML/CSS</span>
                       <span className="skill-tag">MATLAB</span>
-                      <span className="skill-tag">R</span>
                     </div>
                   </div>
 
@@ -313,7 +312,111 @@ function App() {
 
               <section id="contact">
                 <h2 className="gradient-text">Contact</h2>
-                <p>This is the contact section.</p>
+                <div className="contact-container">
+                  <p className="contact-intro">
+                    Want to learn more about me or have a project you want to work on with me?
+                  </p>
+
+                  <div className="contact-form">
+                    <form>
+                      <div className="form-row">
+                        <div className="form-group">
+                          <label htmlFor="name">Your Name</label>
+                          <input 
+                            type="text" 
+                            id="name" 
+                            name="name" 
+                            placeholder="Enter your name" 
+                            required 
+                          />
+                        </div>
+
+                        <div className="form-group">
+                          <label htmlFor="email">Email Address</label>
+                          <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            placeholder="Enter your email" 
+                            required 
+                          />
+                        </div>
+                      </div>
+
+                      <div className="form-group">
+                        <label htmlFor="subject">Subject</label>
+                        <input 
+                          type="text" 
+                          id="subject" 
+                          name="subject" 
+                          placeholder="What's this about?" 
+                          required 
+                        />
+                      </div>
+
+                      <div className="form-group">
+                        <label htmlFor="message">Your Message</label>
+                        <textarea 
+                          id="message" 
+                          name="message" 
+                          placeholder="Hey, I was interested in what your experience was working on X project!" 
+                          required
+                        ></textarea>
+                      </div>
+
+                      <button type="submit" className="submit-button">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <line x1="22" y1="2" x2="11" y2="13"></line>
+                          <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                        </svg>
+                        Send Message
+                      </button>
+                    </form>
+                  </div>
+
+                  <div className="contact-info">
+                    <p>You can also just reach me directly!</p>
+                    
+                    <div className="contact-methods">
+                      <a href="mailto:sabeysi2@jh.edu" className="contact-method">
+                        <div className="contact-icon">
+                          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                          </svg>
+                        </div>
+                        <div className="contact-text">
+                          <span className="contact-label">Email</span>
+                          <span className="contact-value">sabeysi2@jh.edu</span>
+                        </div>
+                      </a>
+
+                      <a href="https://linkedin.com/in/senukaabeysinghe" target="_blank" rel="noopener noreferrer" className="contact-method">
+                        <div className="contact-icon">
+                          <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                          </svg>
+                        </div>
+                        <div className="contact-text">
+                          <span className="contact-label">LinkedIn</span>
+                          <span className="contact-value">linkedin.com/in/senukaabeysinghe</span>
+                        </div>
+                      </a>
+
+                      <a href="tel:+15135261408" className="contact-method">
+                        <div className="contact-icon">
+                          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                          </svg>
+                        </div>
+                        <div className="contact-text">
+                          <span className="contact-label">Phone</span>
+                          <span className="contact-value">(513) 526-1408</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </section>
             </div>
           </main>
