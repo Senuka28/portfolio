@@ -80,26 +80,243 @@ function App() {
           </section>
 
           <section id="experience">
-            <h2>Experience</h2>
-            <p>This is the experience section.</p>
+            <h2 className="gradient-text">Experience</h2>
+            <div className="experience-card">
+              <div className="experience-header">
+                <h3>Software Engineer Intern</h3>
+                <p className="company">Crown</p>
+              </div>
+              <div className="experience-date">May 2025 — Aug 2025</div>
+              <div className="experience-content">
+                <ul>
+                  <li>Implemented an intelligent multithreading architecture for vehicle communication software in C++ using the Boost
+                      library, parallelizing message handling, sensor data processing, and logging to improve throughput by over 40%</li>
+                  <li>Designed an automated unit testing framework for Structured Text, leveraging Python scripts to generate and
+                      execute 490+ test files for embedded code, fully integrated into CI/CD pipeline to reduce manual QA effort</li>
+                  <li>Engineered a time synchronization protocol over the CANBUS for vehicle networks using C++, Lua scripts for sync
+                      logic, and Python for telemetry validation to achieve sub-microsecond clock alignment across device nodes</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="experience-card">
+              <div className="experience-header">
+                <h3>Research Software Engineer</h3>
+                <p className="company">SMARTS Lab — Johns Hopkins University</p>
+              </div>
+              <div className="experience-date">Jan 2025 — Oct 2025</div>
+              <div className="experience-content">
+                <ul>
+                  <li>Architected a deep learning differentiable rendering pipeline in Python with PyTorch3D and OpenCV, refining a
+                      surgical tool’s 6-DoF pose using silhouette and keypoint alignment to reduce manual annotation</li>
+                  <li>Automated GPU-accelerated stereo data preprocessing in Colab, documenting and reporting experiments while
+                      handling calibration parsing, image processing/undistortion, and batching 68,000 frames for simulation purposes</li>
+                  <li>Validated deep learning driven pose estimation at 25 FPS on live endoscopic video, achieving over 83% alignment
+                      accuracy for real-time surgical guidance</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="experience-card">
+              <div className="experience-header">
+                <h3>Research Software Engineer</h3>
+                <p className="company">AMLI Lab — University of Cincinnati</p>
+              </div>
+              <div className="experience-date">May 2021 — June 2024</div>
+              <div className="experience-content">
+                <ul>
+                  <li>Developed MATLAB pipelines to convert genomic sequences into 2D images and trained classifiers (k-NN, Naive
+                      Bayes, k-means) to distinguish plant virus types with up to 92% classification accuracy</li>
+                  <li>Applied machine learning and deep learning models on clinical and histopathological data to predict breast cancer
+                      types, achieving up to 97.2% accuracy using Random Forest with PCA-based feature selection</li>
+                  <li>2x published in the Advances in Artificial Intelligence and Machine Learning Journal</li>
+                </ul>
+              </div>
+            </div>
+
+          <div className="experience-card">
+              <div className="experience-header">
+                <h3>Data Engineer Intern</h3>
+                <p className="company">Clairity</p>
+              </div>
+              <div className="experience-date">May 2024 — Aug 2024</div>
+              <div className="experience-content">
+                <ul>
+                  <li>Supported Clairity’s AI-driven breast cancer risk prediction initiative using R to assist with data preparation and
+                      analysis on mammography datasets across 5,000+ patient records</li>
+                  <li>Led outreach coordination with imaging personnel at 60+ U.S. healthcare facilities to assist in integrating
+                      mammography units, RIS, and PACS systems</li>
+                </ul>
+              </div>
+            </div>
+
+          <div className="experience-card">
+              <div className="experience-header">
+                <h3>Computational Physics Research Intern</h3>
+                <p className="company">Department of Physics — University of Cincinnati</p>
+              </div>
+              <div className="experience-date">June 2023 — May 2024</div>
+              <div className="experience-content">
+                <ul>
+                  <li>Built analytical and computational models to study the stability of ultra-light bosonic systems under external masses
+                  using variational methods, closed-form analysis, and numerical optimization</li>
+                  <li>Developed MATLAB and Python simulations to compute and model energy landscapes, wavefunctions, and stability
+                  regimes, generating 5 distinct analytical figures comparing stability behavior across models and physical scenarios</li>
+                  <li>Manuscript accepted for publication in the Journal of Emerging Investigators</li>
+                </ul>
+              </div>
+            </div>
           </section>
 
           <section id="projects">
-            <h2>Projects</h2>
-            <p>This is the projects section.</p>
+            <h2 className="gradient-text">Projects</h2>
+            <div className="projects-grid">
+              <div className="project-card">
+                <div className="project-header">
+                  <h3>Nonprofit Ops Dashboard</h3>
+                  <ul className="project-languages">
+                    <li>NodeJS</li>
+                    <li>ReactJS</li>
+                    <li>ExpressJS</li>
+                    <li>HTML/CSS</li>
+                    <li>JavaScript</li>
+                    <li>SQL</li>
+                  </ul>
+                </div>
+                <div className="project-content">
+                  <ul>
+                    <li>Created a full-stack web app using React, NodeJS, ExpressJS, and MySQL to manage grant funding, volunteer records, 
+                        and staff timesheets for nonprofit organizations</li>
+                    <li>Implemented timesheet tracking and dynamic data views, reducing manual entry by over 60% and streamlining data
+                        flow across database, front-end, and back-end layers</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="project-card">
+                <div className="project-header">
+                  <h3>CourseVote</h3>
+                  <ul className="project-languages">
+                    <li>Python</li>
+                    <li>TypeScript</li>
+                    <li>Flask</li>
+                    <li>Supabase</li>
+                    <li>PostreSQL</li>
+                    <li>OpenAI API</li>
+                  </ul>
+                </div>
+                <div className="project-content">
+                  <ul>
+                    <li>Built a data pipeline using Python, SQL, and REST APIs to extract, clean, and structure over 2,600+ course
+                        evaluation records, including comments, ratings, and difficulty metrics</li>
+                    <li>Automated course summary generation using OpenAI API, outputs written to database for frontend integration</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="project-card">
+                <div className="project-header">
+                  <h3>Automated PLC Test Library Generator</h3>
+                  <ul className="project-languages">
+                    <li>Python</li>
+                    <li>JSON</li>
+                    <li>Unit Testing</li>
+                  </ul>
+                </div>
+                <div className="project-content">
+                  <ul>
+                    <li>Built a Python automation tool that generates a vendor-agnostic IEC 61131-3 Structured Text unit-testing library
+                        for PLC projects</li>
+                    <li>Delivered a suite of 490 reusable assertion POUs (typed + array assertions) with standardized pass/fail reporting,
+                        reducing duplicated test logic and improving regression reliability</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="project-card">
+                <div className="project-header">
+                  <h3>Baltimore Street Searcher</h3>
+                  <ul className="project-languages">
+                    <li>Java</li>
+                    <li>Docker</li>
+                    <li>Data Structures</li>
+                  </ul>
+                </div>
+                <div className="project-content">
+                  <ul>
+                    <li>Implemented Dijkstra’s algorithm over a Baltimore street network with 27,598 roads and 9,024 endpoints, 
+                        achieving 9–19 ms shortest-path query times and ~60–80 ms graph load times</li>
+                    <li>Exposed pathfinding through a web-based interface for interactive route queries, maintaining stable 
+                        memory usage (~15 MB peak) and consistent performance across short and city-spanning routes</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            
           </section>
 
-          <section id="skills">
-            <h2>Skills</h2>
-            <p>This is the skills section.</p>
-          </section>
+              <section id="skills">
+                <h2 className="gradient-text">Skills</h2>
+                <div className="skills-grid">
+                  <div className="skill-category">
+                    <h3>Languages</h3>
+                    <div className="skill-tags">
+                      <span className="skill-tag">Python</span>
+                      <span className="skill-tag">C/C++</span>
+                      <span className="skill-tag">SQL</span>
+                      <span className="skill-tag">JavaScript</span>
+                      <span className="skill-tag">TypeScript</span>
+                      <span className="skill-tag">Bash</span>
+                      <span className="skill-tag">Java</span>
+                      <span className="skill-tag">HTML/CSS</span>
+                      <span className="skill-tag">MATLAB</span>
+                      <span className="skill-tag">R</span>
+                    </div>
+                  </div>
 
-          <section id="contact">
-            <h2>Contact</h2>
-            <p>This is the contact section.</p>
-          </section>
-        </div>
-      </main>
+                  <div className="skill-category">
+                    <h3>Technologies</h3>
+                    <div className="skill-tags">
+                      <span className="skill-tag">Git</span>
+                      <span className="skill-tag">GitHub Actions</span>
+                      <span className="skill-tag">Flask</span>
+                      <span className="skill-tag">Linux/Unix</span>
+                      <span className="skill-tag">Docker</span>
+                      <span className="skill-tag">VS Code</span>
+                      <span className="skill-tag">Postman</span>
+                      <span className="skill-tag">React</span>
+                      <span className="skill-tag">Node.js/Express</span>
+                      <span className="skill-tag">PyTorch</span>
+                      <span className="skill-tag">TensorFlow</span>
+                      <span className="skill-tag">OpenCV</span>
+                    </div>
+                  </div>
+
+                  <div className="skill-category">
+                    <h3>Concepts</h3>
+                    <div className="skill-tags">
+                      <span className="skill-tag">REST APIs</span>
+                      <span className="skill-tag">SDLC</span>
+                      <span className="skill-tag">OOP</span>
+                      <span className="skill-tag">Full-Stack</span>
+                      <span className="skill-tag">Unit Testing</span>
+                      <span className="skill-tag">CI/CD</span>
+                      <span className="skill-tag">Debugging</span>
+                      <span className="skill-tag">Agile</span>
+                      <span className="skill-tag">Machine Learning</span>
+                      <span className="skill-tag">Deep Learning</span>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section id="contact">
+                <h2 className="gradient-text">Contact</h2>
+                <p>This is the contact section.</p>
+              </section>
+            </div>
+          </main>
   </div>
   );
 }
